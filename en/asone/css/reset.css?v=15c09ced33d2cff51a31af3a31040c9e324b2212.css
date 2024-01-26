@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.header *,
+.header *::before,
+.header *::after {
+  box-sizing: border-box
+}
+
+.header ul[class],
+.header ol[class] {
+  padding: 0
+}
+
+.header body,
+.header h1,
+.header h2,
+.header h3,
+.header h4,
+.header p,
+.header ul[class],
+.header ol[class],
+.header figure,
+.header blockquote,
+.header dl,
+.header dd {
+  margin: 0
+}
+
+.header html {
+  scroll-behavior: smooth
+}
+
+.header body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5
+}
+
+.header ul[class],
+.header ol[class] {
+  list-style: none
+}
+
+.header a:not([class]) {
+  text-decoration-skip-ink: auto
+}
+
+.header img,
+.header picture {
+  max-width: 100%;
+  display: block
+}
+
+.header article>*+* {
+  margin-top: 1em
+}
+
+.header input,
+.header button,
+.header textarea {
+  font: inherit
+}
+
+.header img:not([alt]) {
+  filter: blur(10px)
+}
+
+.header /* @media(prefers-reduced-motion:reduce) {
+.header   * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important
+  }
+} */

@@ -1,0 +1,11 @@
+
+document.write(
+	'<scr' + 'ipt type="text/javascript" src="//www.axel-gl.com/en/asone/js/jquery-1.11.1.min.js">' + '</scr' + 'ipt>'
+
+);
+
+window.__f__g_tmp__ = window.__f__g_tmp__ || {};
+window.__f__g_tmp__["keyword"] = window.__f__g_tmp__["keyword"] || { host: "//www.axel-gl.com", vals: [] };
+window.__f__g_tmp__["keyword"].vals.push({"site":{"id":"global","lang":"vi","user":{"MakerListVisible":false},"cart":{}},"containerId":"keywordbox","keywordTargets":[{"code":"","name":"Toàn bộ danh mục sản phẩm","bCurrent":false},{"code":"SI000000","name":"Dụng cụ & Vật tư Lab","bCurrent":false},{"code":"MR000000","name":"Nhà máy Công cụ & Vật tư","bCurrent":false},{"code":"I0000000","name":"Phòng sạch/Vật tư chống tĩnh","bCurrent":false},{"code":"NV000000","name":"Sản phẩm y tế, điều dưỡng & chăm sóc","bCurrent":false},{"code":"J0000000","name":"Vệ sinh & Kiểm tra Thực phẩm","bCurrent":false},{"code":"OF000000","name":"Đồ dùng Văn phòng và Văn phòng phẩm","bCurrent":false},{"code":"K0000000","name":"Vật tư Khẩn cấp","bCurrent":false},{"code":"EDC000000","name":"Giáo dục, Nguồn cung cấp học tập","bCurrent":false},{"code":"L0000000","name":"Mặt hàng được Đặt hàng Đặc biệt","bCurrent":false}],"pptn":"","abPath":"","showMakerLink":false});
+
+document.write('<scr' + 'ipt type="text/javascript" src="//www.axel-gl.com/en/asone/js/client/gadget_keyword/index.vi.js?v=15c09ced33d2cff51a31af3a31040c9e324b2212" charset="utf-8">' + '</scr' + 'ipt>');

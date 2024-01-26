@@ -1,0 +1,295 @@
+body {
+	/* Google翻訳タグがbodyにstyleを挿入することによりレイアウトが崩れるのを防ぐ */
+	height: 100%;
+}
+
+/*シリーズ/単品表示*/
+.ut_result_display {
+	min-width: 200px;
+	width: auto;
+}
+
+.ut_result_display>li.ut_active>span {
+	padding: 0 10px;
+}
+
+.ut_result_display>li>span {
+	padding: 0 10px;
+}
+
+/*左メニューフォントサイズ縮小*/
+.nav-cat-list-heading a,
+.nav-cat-list-single a {
+	font-size: 13px;
+	line-height: 1.3;
+}
+
+/*削除ボタンのpadding調整*/
+.group-items-table td.stock .stock-btn {
+	min-width: 40px;
+	padding: 3px 5px;
+	width: auto;
+}
+
+/*左メニュー一つ上の階層に戻るリンクのline-height調整*/
+.side_re_btn a {
+	line-height: 1.3;
+	padding: 8px 20px;
+}
+
+/*ソート幅調整*/
+.ut_result_sort_select {
+	width: 160px;
+}
+
+/*ページャを緑に修正*/
+.result-paging li.prev a,
+.result-paging li.next a {
+	background: #bc4547;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #039847 0%, #007134 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #039847), color-stop(100%, #007134));
+	background: -webkit-linear-gradient(top, #039847 0%, #007134 100%);
+	background: -o-linear-gradient(top, #039847 0%, #007134 100%);
+	background: -ms-linear-gradient(top, #039847 0%, #007134 100%);
+	background: linear-gradient(to bottom, #039847 0%, #007134 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#039847', endColorstr='#007134', GradientType=0);
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+/* カテゴリ+ボタンの位置調整 */
+.nav-cat-list-heading a::before {
+	margin-top: -9px;
+	top: 50%;
+}
+
+/* USD改行調整 */
+.result-item .data .data-col {
+	width: 33%;
+}
+
+/* 検索結果ページの罫線変更 */
+.result-head {
+	border-top: 3px solid #008a3f;
+}
+
+/* 赤▲修正 */
+.af-arrow {
+	background: url(../img/arw_01_r_green.png?v=20180125) no-repeat 0 center;
+}
+
+.header-utility-nav li a {
+	background: url(../img/arw_01_r_green.png?v=20180125) no-repeat left center;
+}
+
+.result-item .name {
+	background: url(../img/arw_01_r_green.png?v=20180125) no-repeat 0em 0.4em;
+}
+
+.item-links ul a {
+	background: url(../img/arw_01_r_green.png?v=20180125) no-repeat 10px center;
+}
+
+.side_re_btn a {
+	background: url(../img/arw_03_r_green.png?v=20180125) no-repeat 10px center;
+}
+
+.detail_btn a {
+	background: url(../img/arw_03_r_green.png?v=20180125) no-repeat 10px center;
+}
+
+.item-link-group a {
+	background: url(../img/arw_03_r_green.png?v=20180125) no-repeat 10px center;
+}
+
+/* カートボタン色修正 */
+.action-btn {
+	background: #ffbd56;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #ffbd56 0%, #ff8a3b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffbd56), color-stop(100%, #ff8a3b));
+	background: -webkit-linear-gradient(top, #ffbd56 0%, #ff8a3b 100%);
+	background: -o-linear-gradient(top, #ffbd56 0%, #ff8a3b 100%);
+	background: -ms-linear-gradient(top, #ffbd56 0%, #ff8a3b 100%);
+	background: linear-gradient(to bottom, #ffbd56 0%, #ff8a3b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbd56', endColorstr='#ff8a3b', GradientType=0) border: 1px solid #ff9b58;
+}
+
+.af-is-inquiry-btn {
+	display: inline-block;
+	padding: 7px 0;
+	filter: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+
+	/* ASONE-1514 商品詳細デザイン変更 */
+	width: 230px !important;
+	color: #fff
+}
+
+/*
+/* 検索BOXアクティブ時の背景色 */
+.header-search-kw input:focus {
+	background-color: #fff;
+}
+
+/* 検索BOXプルダウンメニューの背景色*/
+.header-search-cat-select:focus {
+	background-color: #fff;
+}
+
+input,
+textarea {
+	font-family: 'lucida grande', "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
+}
+
+/* 為替レート表記対応 */
+.item-action-table td.price span.af-currency-unit {
+	font-size: 12px;
+	display: block;
+	line-height: 1
+}
+
+.af-currency-num {
+	display: block;
+	padding-bottom: 5px;
+}
+
+.af-price-rate-note {
+	font-weight: normal;
+	line-height: 1.5;
+	font-size: 12px;
+	padding-top: 5px;
+	border-top: 1px dotted #ccc;
+}
+
+/* カテゴリ選択 */
+.header-search-cat {
+	max-width: 280px;
+}
+
+/* poweredby */
+.poweredby {
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+
+.ut_makerList>.ut_heading {
+	border-bottom: 1px solid #ccc;
+	border-top: 3px solid #008a3f;
+	color: #444;
+	font-size: 150%;
+	padding: 10px 0;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.ut_makerList .ut_makerlist_wrap .ut_main .ut_maker_line .ut_maker_chara h3 {
+	font-weight: bold;
+	background-color: #f3f3f3;
+	margin-bottom: 15px;
+	border-left: 4px solid #008a3f;
+	padding: 5px 15px;
+}
+
+.catalog-list label {
+	display: block;
+	height: 100%;
+	padding: 0 19px;
+	text-align: center;
+	cursor: pointer;
+	height: 256px;
+}
+
+/* category list 長い単語の後該当商品数の数字を強制改行*/
+.result-categories-list .result-category .name {
+	word-break: break-word;
+}
+
+.result-categories-list .result-category .name .count {
+	display: inline-block;
+}
+
+.result-item .texts {
+	min-width: 815px;
+}
+
+.result-item .data {
+	width: 450px;
+}
+
+.result-item .data .data-col {
+	vertical-align: middle;
+}
+
+.result-item .data-price .data-num {
+	display: block;
+}
+
+.btn-variation:after {
+	background: url(../img/arw_01_r_green.png?v=20180125) no-repeat;
+}
+
+/* ASONE-1307 0 hit */
+#af-movetotop {
+	width: 30%;
+	height: 50px;
+	display: inline-block;
+	padding: 0.25em;
+	text-decoration: none;
+	color: #FFF;
+	background: #008a3f;
+	border-radius: 4px;
+	font-weight: 4px;
+	font-weight: bold;
+	line-height: 45px;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+#af-movetotop:active {
+	border-bottom: solid 2px #008c3f;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.30)
+}
+
+/* ASONE-1339 Google Translate */
+#google_translate_element {
+	display: inline-block;
+	margin-left: 1em;
+}
+
+@media screen and (max-width: 768px) {
+	#google_translate_element {
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+
+#google_translate_element .goog-te-gadget {
+	display: flex;
+	align-items: center;
+	font-family: arial;
+	font-size: 11px;
+	color: #ccc;
+	white-space: nowrap;
+}
+
+.goog-te-gadget span {
+	margin-left: 3px;
+	display: inline-block;
+	background-color: #f0f0f0;
+	padding: 2px 2px 1px 2px;
+	border-radius: 2px;
+}
+
+.goog-te-gadget span a {
+	display: flex;
+	align-items: center;
+}
+
+.goog-te-combo:focus {
+	background-color: #ffc;
+}

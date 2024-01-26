@@ -1,0 +1,1156 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*  reset
+----------------------------------------------------------*/
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+strong,
+sub,
+i,
+small,
+address,
+time,
+fieldset,
+form,
+label,
+legend,
+hr,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+header,
+footer,
+nav,
+section,
+article,
+aside,
+figure,
+figcaption,
+canvas,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+html {
+    overflow-y: scroll;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+    cursor: pointer;
+}
+
+table,
+tr,
+th,
+td {
+    border-collapse: collapse;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2e91f4;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    width: 100%;
+    color: #333;
+    /*font-family: "Century Gothic", 'Futura Light', Futura, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;*/
+    /* font-family は ecd のものに合わせる*/
+    font-family: 'lucida grande', "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.667;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/*  header
+----------------------------------------------------------*/
+#header.FP-header {
+    border-bottom: none;
+}
+
+#header.FP-header {
+    min-width: 1000px;
+}
+
+/*  secondryBox
+--------------------------*/
+.FP-headerSecondary {
+    background-color: #008a3f;
+    min-height: 36px;
+}
+
+.FP-headerSecondary a {
+    text-decoration: none;
+}
+
+.FP-headerSecondary::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.FP-headerSecondary__left {
+    float: left;
+    padding-left: 20px;
+    display: table;
+}
+
+.FP-headerSecondary__right {
+    float: right;
+    padding-right: 20px;
+    min-height: 40px;
+    line-height: 40px;
+}
+
+/*  ホームリンク  */
+.FP-portalTopWrap {
+    display: inline-block;
+}
+
+.FP-portalTopWrap::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 40px;
+    top: 0;
+    left: 35px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/global/ico_homeBg.svg);
+}
+
+.FP-portalTopLink {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 40px;
+    width: 20px;
+    background-image: url(../img/global/ico_home.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 18px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.FP-portalTopLink:hover {
+    background-image: url(../img/global/ico_homeHover.svg);
+}
+
+
+/*  slogan */
+.FP-slogan {
+    display: inline-block;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 36px;
+    padding-right: 10px;
+    margin-right: 10px;
+    background-image: url(../img/global/bg_line.png?v=20180125);
+    background-repeat: no-repeat;
+    background-position: center right;
+
+}
+
+/*  username */
+.FP-userName {
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/*  ユーザーメニュー  */
+.FP-userMenuBox {
+    display: table-cell;
+}
+
+.FP-userMenu {
+    letter-spacing: -0.5em;
+    border-right: 1px solid #80c59f;
+    box-shadow: 1px 0 0 #08773d;
+}
+
+.FP-userMenu__item {
+    letter-spacing: normal;
+    position: relative;
+    display: inline-block;
+    border-left: 1px solid #80c59f;
+    box-shadow: -1px 0 0 #08773d;
+    min-width: 130px;
+    text-align: center;
+}
+
+.FP-userMenu__item a {
+    color: #FFF;
+    display: block;
+    line-height: 36px;
+    padding: 0 20px 0 30px;
+    position: relative;
+    font-size: 14px;
+}
+
+.FP-userMenu__item a:hover {
+    background-color: #00a149;
+}
+
+.FP-userMenu__item_contactus {
+    letter-spacing: normal;
+    position: relative;
+    display: inline-block;
+    min-width: 130px;
+    text-align: center;
+    margin: 0px 20px 0 0;
+}
+
+.FP-userMenu__item_contactus a {
+    color: #FFF;
+    display: block;
+    line-height: 30px;
+    padding: 0px 20px 1px 30px;
+    position: relative;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+}
+
+.FP-userMenu__item_contactus a:hover {
+    border-radius: 5px;
+    background-color: #00a149;
+}
+
+/*  アイコン  */
+.FP-ico--help::before,
+.FP-ico--signUp::before,
+.FP-ico--signIn::before,
+.FP-ico--contact::before,
+.FP-ico--yourLists::before,
+.FP-ico--yourOrders::before,
+.FP-ico--yourAccount::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    top: 6px;
+    margin-left: -20px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.FP-ico--help::before {
+    background-image: url(../img/global/ico_help.png?v=20180125);
+}
+
+.FP-ico--signUp::before {
+    background-image: url(../img/global/ico_signUp.png?v=20180125);
+}
+
+.FP-ico--signIn::before {
+    background-image: url(../img/global/ico_signIn.png?v=20180125);
+}
+
+.FP-ico--contact::before {
+    top: 4px;
+    background-image: url(../img/global/ico_contact.png?v=20180125);
+}
+
+.FP-ico--yourLists::before {
+    background-image: url(../img/global/ico_yourLists.png?v=20180125);
+}
+
+.FP-ico--yourOrders::before {
+    background-image: url(../img/global/ico_yourOrders.png?v=20180125);
+}
+
+.FP-ico--yourAccount::before {
+    background-image: url(../img/global/ico_yourAccount.png?v=20180125);
+}
+
+
+
+/*  primaryBox
+--------------------------*/
+.FP-headerPrimary {
+    content: " ";
+    display: block;
+    clear: both;
+    position: relative;
+    margin-top: 20px;
+    position: relative;
+}
+
+/*  ロゴ  */
+.ut_logo {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0px 20px;
+}
+
+.FP-logo {
+    display: inline-block;
+    width: 20%;
+    width: 135px;
+    height: 42px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url(../img/global/dotShopLogo.png?v=20180125);
+    background-repeat: no-repeat;
+    margin: 5px 0 20px 20px;
+}
+
+.FP-logo a {
+    display: block;
+    width: 135px;
+    height: 42px;
+}
+
+/*  検索BOX  */
+.FP-searchBox--top {
+    content: " ";
+    display: block;
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.FP-searchBox {
+    content: " ";
+    display: block;
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 300px;
+    width: 75%;
+    border: 5px solid #e4e4e4;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+}
+
+.FP-searchBox__wrap {
+    border-radius: 10px;
+    box-shadow: 1px 4px 4px -4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 4px 4px -4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 4px 4px -4px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    height: 44px;
+}
+
+@media screen and (max-width: 768px) {
+    .FP-searchBox__wrap {
+        height: 36px;
+    }
+}
+
+/* 検索ボックス下のメーカー一覧へのリンク */
+.FP-maker {
+    text-align: right;
+    margin-top: 6px;
+}
+
+.FP-maker__text {
+    background: url(../img/arw_02_r.png?v=20190601) no-repeat 10px;
+    padding-left: 20px;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.ut_news {
+    padding: 15px 0px 0px 250px;
+}
+
+.ut_news ul li {
+    font-size: 12px;
+}
+
+.ut_news ul li .ut_news_tit {
+    color: #005BAB;
+}
+
+.header-search-cat {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    height: 44px;
+    max-width: auto;
+    box-sizing: border-box;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #ccc;
+    border-right-width: 0px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    .header-search-cat {
+        height: 36px;
+    }
+}
+
+.header-search-cat-select {
+    position: absolute;
+}
+
+.header-search-cat select.FP-searchCategory__selecter {
+    margin: 0;
+    padding: 0;
+}
+
+.header-search-cat-current {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    padding-left: 30px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    height: 44px;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #FFF;
+    background: linear-gradient(to bottom, #ffffff 0%, #ededed 100%);
+    font-weight: bold;
+    color: #242424;
+    display: inline-block;
+    line-height: 44px;
+    font-size: 14px;
+
+    border: solid 1px #ccc;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header-search-cat-current {
+        font-size: 12px;
+        height: 36px;
+        line-height: 36px;
+        padding-left: 10px;
+        padding-right: 30px;
+        max-width: 125px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+/*.header-search-cat-current::before*/
+.pTagSelect::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    width: 9px;
+    height: 9px;
+    border-top: 2px solid #242424;
+    border-right: 2px solid #242424;
+    top: 46%;
+    z-index: 99;
+    -webkit-transform: translateY(-50%) rotate(135deg);
+    -ms-transform: translateY(-50%) rotate(135deg);
+    transform: translateY(-50%) rotate(135deg);
+}
+
+@media screen and (max-width: 768px) {
+    /*.header-search-cat-current::before*/
+    .pTagSelect::before{
+        right: 10px;
+    }
+}
+.pTagSelect::after,
+.header-search-cat-current::after {
+    background: none;
+}
+
+.header-search-kw {
+    width: auto;
+    height: 44px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .header-search-kw {
+        height: 36px;
+    }
+}
+
+.header-search-kw input {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 44px;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.header-search-form{
+    position: relative;
+}
+
+  /* サジェストレイアウト変更 PC */ 
+.header-search-form .suggest-area {
+	display: none;
+	position: absolute;
+	top: 39px;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	padding: 11px 0 13px;
+	background: #fff;
+	border: 1px solid #CCCCCC;
+	border-top-color: #dfdfdf;
+	border-radius: 0 0 6px 6px;
+  }
+  
+  .header-search-form .suggest-area .suggest-list li {
+	padding: 0 20px;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.715;
+	cursor: pointer;
+  }
+  
+  .suggest-area .suggest-list .af-top-suggest-item:first-of-type{
+	  border-top: none;
+	  padding-top: 0;
+	  color: #888;
+  }
+  
+  .suggest-area .suggest-list .af-history-title {
+	  border-top: none;
+	  font-size: 16px;
+	  padding-top: 0;
+	  font-weight: bold;
+	  color: #888;
+  }
+  
+  .header-footer .header-search-form .suggest-area .suggest-list li.af-history-title:hover {
+	  background: #FFF;
+	  color:#888;
+	  cursor: default;
+  }
+  
+  .suggest-area .suggest-list .af-top-suggest-item{
+	  border-top: solid 1px;
+	  padding-top: 6px;
+	  color:#888;
+  }
+  
+  .suggest-area .suggest-list .af-suggest-title-productno {
+	  font-size: 12px;
+	  background: #931d28;
+	  color: white;
+	  display: inline-block;
+	  width: 120px;
+	  text-align: center;
+  }
+  
+  .suggest-area .suggest-list .af-suggest-title-modelno {
+	  font-size: 12px;
+	  background: #338995;
+	  color: white;
+	  display: inline-block;
+	  width: 120px;
+	  text-align: center;
+  }
+  
+  .suggest-area .suggest-list .af-suggest-title-category {
+	  font-size: 12px;
+	  background: #aaa130;
+	  color: white;
+	  display: inline-block;
+	  width: 120px;
+	  text-align: center;
+  }
+  
+  .suggest-area .suggest-list .af-suggest-title-maker {
+	  font-size: 12px;
+	  background: #c74691;
+	  color: white;
+	  display: inline-block;
+	  width: 120px;
+	  text-align: center;
+  }
+  
+  .af-suggest-key-bold {
+	  font-weight: bold;
+  }
+  /* サジェストレイアウト変更 ここまで */ 
+
+
+/* サジェストレイアウト変更 SP */ 
+@media screen and (max-width: 768px) {
+
+.header-search-form .suggest-area {
+	z-index: 10;
+	width: 100%;
+	background: #fff;
+	border: 1px solid #cccccc;
+	border-top-color: #dfdfdf;
+	border-radius: 0 0 6px 6px;
+	overflow-y: scroll;
+}
+
+.header-search-form .suggest-area .suggest-list li {
+  padding: 10px 5px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.715;
+  border-bottom: 2px solid #ddd;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.header-search-form .suggest-area .suggest-list li:hover, .header-search-form .suggest-area .suggest-list li.focus {
+  background: #f3f3f3;
+  color: #2e91f4;
+}
+
+.header-search-form .suggest-area .suggest-list li.active {
+  background: #e6eef7;
+  color: #2e91f4;
+  font-weight: bold;
+}
+
+.header-search-form .suggest-area .suggest-list .suggest-item .af-suggest-helptext{
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.suggest .header-search-kw {
+  border-top-color: #2e91f4;
+  border-left: 1px solid #2e91f4;
+}
+
+.suggest-area .suggest-list .af-history-title {
+	border-top: none;
+	font-size: 16px;
+	padding-top: 0;
+	font-weight: bold;
+	color: #888;
+}
+
+.suggest-area .suggest-list .af-history-title:hover {
+	background: #FFF;
+	color:#888;
+	cursor: default;
+}
+
+.suggest-area .suggest-list .af-suggest-title-productno {
+	font-size: 12px;
+	background: #931d28;
+	color: white;
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+}
+
+.suggest-area .suggest-list .af-suggest-title-modelno {
+	font-size: 12px;
+	background: #338995;
+	color: white;
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+}
+
+.suggest-area .suggest-list .af-suggest-title-category {
+	font-size: 12px;
+	background: #aaa130;
+	color: white;
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+}
+
+.suggest-area .suggest-list .af-suggest-title-maker {
+	font-size: 12px;
+	background: #c74691;
+	color: white;
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+}
+
+.af-suggest-key-bold {
+	font-weight: bold;
+}
+
+
+}
+/* サジェストレイアウト変更 ここまで */ 
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .header-search-kw input {
+        height: 36px;
+        font-size: 12px;
+    }
+
+    /* .header-search-kw input::placeholder {
+        color: transparent;
+    } */
+    .af-keyword-input.header-search-kw-input{
+      color: #757575 !important;
+    }
+}
+
+.header-search-btn {
+    float: right;
+    background: #007e34;
+    background: -webkit-gradient(linear, left bottom, left top, from(#007e34), to(#00993f));
+    background: -webkit-linear-gradient(bottom, #007e34 0%, #00993f 100%);
+    background: -o-linear-gradient(bottom, #007e34 0%, #00993f 100%);
+    background: linear-gradient(0deg, #007e34 0%, #00993f 100%);
+    width: 62px;
+    height: 44px;
+    border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .header-search-btn {
+        width: 42px;
+        height: 36px;
+        background: #fff;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+}
+
+.header-search-submit {
+    width: 62px;
+    height: 44px;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: none;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/global/ico_search.png?v=20180125);
+}
+
+@media screen and (max-width: 768px) {
+    .header-search-submit {
+        width: 42px;
+        height: 34px;
+        background-image: url(../img/global/ico_search_sp.png);
+    }
+}
+
+
+
+
+
+
+/*  カート  */
+.FP-cart {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-left: 5px;
+    border: 5px solid #e4e4e4;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+}
+
+.FP-cart__btn {
+    display: block;
+    position: relative;
+    background: #ff761b;
+    background: linear-gradient(to bottom, #ffae2e 0%, #ff761b 100%);
+    height: 44px;
+    line-height: 44px;
+    border-radius: 10px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 40px 0 35px;
+}
+
+.FP-cart__btn::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 44px;
+    left: 8px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/global/ico_cart.png?v=20180125);
+}
+
+.FP-cart__num {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: #ff761b;
+    background-color: #FFF;
+    border-radius: 50%;
+    min-width: 26px;
+    height: 26px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.FP-cart__num.is-active {
+    background-color: #FFF;
+}
+
+.FP-cart__btn:hover {
+    background: #ff9148;
+    background: linear-gradient(to bottom, #ffbd56 0%, #ff8a3b 100%);
+    color: #FFF;
+}
+
+/*  承認 */
+.FP-approve {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-left: 5px;
+    border: 5px solid #e4e4e4;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+}
+
+.FP-approve__btn {
+    display: block;
+    position: relative;
+    background: #ff761b;
+    background: linear-gradient(to bottom, #ffae2e 0%, #ff761b 100%);
+    height: 44px;
+    line-height: 44px;
+    border-radius: 10px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 40px 0 35px;
+}
+
+.FP-approve__btn::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 44px;
+    left: 8px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/global/ico_approve.svg);
+}
+
+.FP-approve__num {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: #ff761b;
+    background-color: #FFF;
+    border-radius: 50%;
+    min-width: 26px;
+    height: 26px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.FP-approve__num.is-active {
+    background-color: #FFF;
+}
+
+.FP-approve__btn:hover {
+    background: #ff9148;
+    background: linear-gradient(to bottom, #ffbd56 0%, #ff8a3b 100%);
+    color: #FFF;
+}
+
+
+
+/*  ログインBOX  */
+.FP-loginBox {
+    position: absolute;
+    right: 20px;
+    top: 4px;
+}
+
+.FP-loginBox__login,
+.FP-loginBox__logout {
+    display: block;
+    position: relative;
+    background: #f4f4f4;
+    background: linear-gradient(to bottom, #ffffff 0%, #ededed 100%);
+    height: 44px;
+    padding: 0 10px;
+    line-height: 44px;
+    border-radius: 8px;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: solid 1px #c6c6c6;
+}
+
+.FP-loginBox__logout:hover,
+.FP-loginBox__logout:hover {
+    color: #333;
+    background: linear-gradient(to bottom, #f4f4f4 0%, #ececec 100%);
+}
+
+/*  body
+----------------------------------------------------------*/
+#main .result-head {
+    border-top: 3px solid #008a3f;
+}
+
+.side-filter-head {
+    border-top: 3px solid #008a3f;
+}
+
+.detail-head {
+    border-top: 3px solid #008a3f;
+}
+
+.relative {
+    border-top: 3px solid #008a3f;
+}
+
+/*  footer
+----------------------------------------------------------*/
+.FP-footer {
+    background-color: #008a3f;
+    width: 100%;
+}
+
+.FP-footerMenuBox {
+    color: #FFF;
+    padding: 0 20px
+}
+
+.FP-footerMenuBox a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.FP-footerMenu {
+    border-left: 1px solid #FFF;
+    display: inline-block;
+    min-height: 200px;
+    width: 33%;
+    max-width: 400px;
+    padding: 0 20px;
+    margin: 20px 0;
+    vertical-align: top;
+}
+
+.FP-footerMenu dt {
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.FP-footerCopyBox {
+    background-color: #FFF;
+    padding: 20px 0;
+}
+
+/*  フッタロゴ  */
+.FP-footerLogo {
+    display: inline-block;
+    width: 136px;
+    height: 18px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url(../img/global/asoneLogo.png?v=20180125);
+    background-repeat: no-repeat;
+    margin: 0 0 0 20px;
+}
+
+.FP-footerLogo a {
+    display: block;
+    width: 136px;
+    height: 18px;
+}
+
+.FP-footerCopy {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+#af-pagetop.FP-footerAllow a {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    background-color: #282c35;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url(../img/global/ico_allow.png?v=20180125);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+/*  tooltip
+--------------------------*/
+.FP-tooltip {
+    position: absolute;
+    background: #55c893;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1000;
+    color: #333;
+    top: 5px;
+    left: 50px;
+    display: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    padding: 5px 12px;
+}
+
+.FP-tooltip::after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #55c893;
+    border-width: 5px;
+    margin-top: -5px;
+}
+
+
+/*  商品ページのフッタ余白対応
+--------------------------*/
+#content {
+    padding-bottom: 44px;
+}
+
+/*	キーワード検索結果 --------- */
+.result-categories-container {
+    display: inline-block;
+    margin-right: 25px;
+}

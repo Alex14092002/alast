@@ -1,0 +1,7 @@
+.ui-slider-range-max {
+	right: 0 !important;
+	left: auto !important;
+}
+.ui-slider-handle {
+	z-index: 100;
+}

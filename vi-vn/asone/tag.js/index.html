@@ -1,0 +1,19 @@
+
+var __f__tag_info = {
+	 "params" : {"id":"global","lang":"vi","user":{"MakerListVisible":false},"cart":{}}
+	,"host"   : "//www.axel-gl.com"
+	,"trackingEvents" : {"leavePage":{"elmid":"","isWin":true,"event":"beforeunload"}}
+};
+(function() {
+	var s0 = document.getElementsByTagName('script')[0];
+	var sNew;
+	var loadJquery = false;
+	if(typeof($) === "undefined" || ($.fn && $.fn.jquery !== "1.11.1")){
+		loadJquery = true;
+	}
+	var file = loadJquery ? "tag2.js" : "tag.js";
+	sNew = document.createElement("script");
+	sNew.src = "/en/asone/js/client/" + file + "?lang=vi&v=15c09ced33d2cff51a31af3a31040c9e324b2212";
+	s0.parentNode.insertBefore(sNew, s0);
+})();
+
